@@ -34,14 +34,13 @@ y is the same as x but shifted by one position. It serves as the target for pred
 
 Example:
 Suppose block_size=5 and data="hello world" encoded as integers:
-data = [7, 4, 11, 11, 14, 26, 22, 14, 17, 11, 3]
-ix = [0, 5]
+     
+     data = [7, 4, 11, 11, 14, 26, 22, 14, 17, 11, 3]
+     ix = [0, 5]
 
-x = [[7, 4, 11, 11, 14],  # "hello"
-     
+     x = [[7, 4, 11, 11, 14],  # "hello"
      [26, 22, 14, 17, 11]] # " worl"
-y = [[4, 11, 11, 14, 26],  # "ello "
-     
+     y = [[4, 11, 11, 14, 26],  # "ello "     
      [22, 14, 17, 11, 3]]  # "world"
 
 
@@ -60,10 +59,10 @@ Once done, the model is switched back to training mode using model.train().
 Example:
 Assume:
 
-Training loss = [1.2, 1.1, 1.15, 1.05]
-Validation loss = [1.5, 1.45, 1.6, 1.4] The function outputs:
+     Training loss = [1.2, 1.1, 1.15, 1.05]
+     Validation loss = [1.5, 1.45, 1.6, 1.4] The function outputs:
 
-{'train': 1.125, 'val': 1.4875}
+     {'train': 1.125, 'val': 1.4875}
 
 Head Class
 This represents a single head of self-attention, a crucial building block for Transformers.
