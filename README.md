@@ -36,9 +36,12 @@ Example:
 Suppose block_size=5 and data="hello world" encoded as integers:
 data = [7, 4, 11, 11, 14, 26, 22, 14, 17, 11, 3]
 ix = [0, 5]
+
 x = [[7, 4, 11, 11, 14],  # "hello"
+     
      [26, 22, 14, 17, 11]] # " worl"
 y = [[4, 11, 11, 14, 26],  # "ello "
+     
      [22, 14, 17, 11, 3]]  # "world"
 
 
